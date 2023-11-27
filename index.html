@@ -23,32 +23,33 @@
     <title>Reloj</title>
   </head>
   <body>
-    <header></header>
-    <main>
-      <div class="wrap">
-        <div class="widget">
-          <div class="fecha">
-            <p id="diaSemana" class="diaSemana"></p>
-            <p id="dia" class="dia"></p>
-            <p>de</p>
-            <p id="mes" class="mes"></p>
-            <p>del</p>
-            <p id="year" class="year"></p>
-          </div>
-          <div class="hora d-block">
-            <p id="horas" class="horas"></p>
-            <p>:</p>
-            <p id="minutos" class="minutos"></p>
-            <p>:</p>
-            <div class="contenedorSegundos d-inline-block">
-              <p id="ampm" class="ampm"></p>
-              <p id="segundos" class="segundos"></p>
-            </div>
-          </div>
+    <main class="mt-5 d-flex flex-column align-items-center text-center p-1 m-4">
+      <div
+        id="fecha"
+        class="mb-3 d-flex justify-content-center align-items-center p-3 row">
+        <div class="col-sm-6 col-md-12 col-lg-12">
+          <h2 id="diaSemana" class="m-0"></h2>
+          <h2 id="dia" class="m-0"></h2>
+          <h2 id="de" class="m-0"></h2>
+        </div>
+        <div class="col-sm-6 col-md-12 col-lg-12">
+          <h2 id="mes" class="m-0"></h2>
+          <h2 id="del" class="m-0"></h2>
+          <h2 id="year" class="m-0"></h2>
         </div>
       </div>
+      <div
+        id="hora"
+        class="d-flex justify-content-center align-items-center p-3"
+      >
+        <h2 id="horaActual" class="m-0"></h2>
+        <h2 class="p-0 m-0">:</h2>
+        <h2 id="minuto" class="m-0"></h2>
+        <h2 class="p-0 m-0">:</h2>
+        <h2 id="segundo" class="m-0"></h2>
+        <h2 id="ampm" class="m-0"></h2>
+      </div>
     </main>
-    <footer></footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
